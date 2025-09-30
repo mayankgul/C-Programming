@@ -3,12 +3,11 @@
 int numOfDigits(int num)
 {
     int digits = 0;
-    int num_copy = num;
 
-    while (num_copy > 0)
+    while (num > 0)
     {
         digits++;
-        num_copy /= 10;
+        num /= 10;
     }
 
     return digits;
